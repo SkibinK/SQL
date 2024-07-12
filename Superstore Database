@@ -1,0 +1,19 @@
+--Order the items by price.
+SELECT item_name, price
+FROM superstore
+ORDER BY price
+ASC;
+​
+--Show average price of all items offered.
+SELECT AVG (price)
+FROM superstore;
+​
+--Show average price of all items in the category of Kitchen Supplies.
+SELECT AVG (price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+--Show average rating of all electronics.
+SELECT AVG (average_rating), category
+FROM superstore
+WHERE category = "Electronics";
